@@ -72,13 +72,13 @@ function Home() {
                 className="h-full w-full object-cover"
               />
             </div>
-            <div className="glass absolute -bottom-6 -left-4 hidden rounded-2xl p-4 md:block">
+            <div className="glass absolute bottom-6 left-6 hidden rounded-2xl p-4 shadow-lg md:block">
               <div className="flex items-center gap-3">
                 <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-primary/10 text-primary">
                   <Clock className="h-5 w-5" />
                 </span>
                 <div>
-                  <div className="text-sm font-semibold">Open today</div>
+                  <div className="text-sm font-semibold">Opening Hours</div>
                   <div className="text-xs text-muted-foreground">{CLINIC.hours.morning} • {CLINIC.hours.evening}</div>
                 </div>
               </div>
