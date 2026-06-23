@@ -243,7 +243,7 @@ function MonthCalendar({ all }: { all: Appointment[] }) {
           const items = byDate.get(iso) ?? [];
           const isToday = iso === todayISO();
           return (
-            <div key={iso} className={"min-h-[72px] rounded-lg border p-1.5 text-left text-xs " + (isToday ? "border-primary bg-primary/5" : "bg-white/60")}>
+            <div key={iso} className={"min-h-[72px] rounded-lg border p-1.5 text-left text-xs " + (isToday ? "border-primary bg-primary/5" : "bg-card/70")}>
               <div className="font-semibold">{day}</div>
               <div className="mt-1 space-y-0.5">
                 {items.slice(0, 2).map((a) => (
@@ -319,7 +319,7 @@ function Treatments() {
       <p className="text-sm text-muted-foreground">Treatments are configured in <code>src/lib/clinic.ts</code>. Connect Lovable Cloud to enable full CRUD from this UI.</p>
       <div className="mt-4 grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
         {TREATMENTS.map((t) => (
-          <div key={t.id} className="rounded-xl border bg-white/70 p-3">
+          <div key={t.id} className="rounded-xl border bg-card/70 p-3">
             <div className="font-medium">{t.name}</div>
             <div className="text-xs text-muted-foreground">{t.duration} min • ₹{t.price.toLocaleString("en-IN")}</div>
           </div>
