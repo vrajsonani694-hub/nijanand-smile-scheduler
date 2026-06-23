@@ -112,7 +112,7 @@ function Booking() {
             <CheckCircle2 className="mx-auto h-14 w-14 text-primary" />
             <h1 className="mt-4 text-3xl font-bold">Appointment Confirmed</h1>
             <p className="mt-1 text-muted-foreground">We've saved your slot. Please send the confirmation on WhatsApp so the clinic gets a copy.</p>
-            <div className="mt-6 grid gap-3 rounded-2xl border bg-white/60 p-5 text-left text-sm">
+            <div className="mt-6 grid gap-3 rounded-2xl border bg-card/70 p-5 text-left text-sm">
               <Row k="Patient" v={confirmed.patientName} />
               <Row k="Mobile" v={confirmed.mobile} />
               <Row k="Doctor" v={CLINIC.doctor} />
@@ -205,7 +205,7 @@ function Booking() {
             <Textarea id="notes" rows={3} value={notes} onChange={(e) => setNotes(e.target.value)} placeholder="Anything we should know?" maxLength={500} />
           </div>
 
-          <div className="rounded-xl border bg-white/60 p-3 text-sm">
+          <div className="rounded-xl border bg-card/70 p-3 text-sm">
             {slot ? (
               <>Booking <b>{formatSlot(slot)}</b> on <b>{date}</b></>
             ) : (
@@ -247,7 +247,7 @@ function SlotGrid({
                 "rounded-lg border px-2 py-2 text-xs font-medium transition-all",
                 disabled ? "cursor-not-allowed bg-muted text-muted-foreground line-through opacity-60"
                 : active ? "border-primary bg-hero-gradient text-primary-foreground shadow"
-                : "bg-white/70 hover:border-primary hover:text-primary",
+                : "bg-card/70 hover:border-primary hover:text-primary",
               ].join(" ")}
             >
               {formatSlot(s)}

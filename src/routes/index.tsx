@@ -28,7 +28,7 @@ function Home() {
         <div className="absolute inset-0 -z-10 opacity-60 [background-image:radial-gradient(circle_at_20%_20%,oklch(0.85_0.1_210/.7),transparent_45%),radial-gradient(circle_at_80%_30%,oklch(0.78_0.13_230/.5),transparent_50%)]" />
         <div className="mx-auto grid max-w-6xl items-center gap-10 px-4 py-16 md:grid-cols-2 md:py-24">
           <div>
-            <span className="inline-flex items-center gap-2 rounded-full border bg-white/60 px-3 py-1 text-xs text-primary backdrop-blur">
+            <span className="inline-flex items-center gap-2 rounded-full border bg-card/70 px-3 py-1 text-xs text-primary backdrop-blur">
               <Sparkles className="h-3.5 w-3.5" /> Trusted dental care in your neighbourhood
             </span>
             <h1 className="mt-4 text-4xl font-bold tracking-tight md:text-6xl">
@@ -147,7 +147,7 @@ function Home() {
               <Button asChild size="lg" variant="secondary">
                 <Link to="/appointment">Book now</Link>
               </Button>
-              <Button asChild size="lg" variant="outline" className="border-white/40 bg-white/10 text-white hover:bg-white/20 hover:text-white">
+              <Button asChild size="lg" variant="outline" className="border-white/40 bg-card/10 text-white hover:bg-card/20 hover:text-white">
                 <a href={`tel:${CLINIC.phoneTel}`}>Call {CLINIC.phone}</a>
               </Button>
             </div>

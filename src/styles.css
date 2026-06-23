@@ -148,3 +148,32 @@
     color: var(--color-foreground);
   }
 }
+
+@utility glass {
+  background-color: color-mix(in oklab, var(--card) 75%, transparent);
+  backdrop-filter: blur(12px);
+  border: 1px solid color-mix(in oklab, var(--border) 80%, transparent);
+  box-shadow: var(--shadow-card);
+}
+
+@utility glass-soft {
+  background-color: color-mix(in oklab, var(--card) 60%, transparent);
+  backdrop-filter: blur(8px);
+  border: 1px solid color-mix(in oklab, var(--border) 60%, transparent);
+}
+
+@utility bg-hero-gradient {
+  background-image: var(--gradient-hero);
+  color: var(--primary-foreground);
+}
+
+@utility bg-soft-gradient {
+  background-image: var(--gradient-soft);
+}
+
+@utility text-gradient {
+  background-image: var(--gradient-hero);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
